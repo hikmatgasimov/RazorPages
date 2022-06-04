@@ -1,0 +1,40 @@
+﻿@page "/employees/details/{id}"
+@model RazorPages.Pages.Employees.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+@*<div class="col-sm-8">
+    @await Component.InvokeAsync("HeadCount")
+</div>*@
+<div>
+    <h4>EmpJoinDateClass</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.employees.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.employees.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.employees.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.employees.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.employees.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.employees.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.employees.Department)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.employees.Department)
+        </dd>
+    </dl>
+</div>

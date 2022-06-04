@@ -1,0 +1,17 @@
+﻿@page "{id}"
+@model RazorPages.Pages.Employees.DeleteModel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<div class="text-center alert-danger">
+    <partial name="_DisplayEmployeePartial" model="Model.employees"/>
+    <h5>@Model.employees.Name</h5>
+    <form method="post">
+        <button type="submit" class="btn btn-outline-danger">Yes</button>
+        <a asp-page="/Employees/Index">Cancel</a>
+    </form>
+</div>
+
